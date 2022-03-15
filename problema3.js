@@ -18,7 +18,22 @@ for(let i=0; i<50; i++){
    
 //Empieza mi ejercicio
 //function clasificar comida(comidas,callback)
-function
+function alimentos(callback){
+    setTimeout(function(){
+        let filtro=comidas.filter(function(comida){
+            return comida.tipos="vegetal " && comida.nivel_energia>=200
+        })
+
+        callback(filtro)
+    },5000)
+}
+
+alimentos(function(filtro){
+    contador=0
+    ForEach(function(suma){
+       let  sumatoria=contador+suma
+    })
+})
 
 
 
